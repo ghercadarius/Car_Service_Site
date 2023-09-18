@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Repair Shop</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="pwork.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li>
+        <a href="angajati.html">Employees</a>
+        <ul>
+          <li><a href="angajati.html#mecanici">Mechanics</a></li>
+          <li><a href="angajati.html#tehnicieni">Technicians</a></li>
+          <li><a href="angajati.html#auxiliar">Support Staff</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <ul>
+          <li><a href="contact.html#locatii">Locations</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="pwork.html">Previous Work</a>
+        <ul>
+          <li><a href="pwork.html#poze">Gallery</a></li>
+          <li><a href="pwork.html#recenzii">Testimonials</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section id = "continut">
+  <!-- Home Page -->
+  <div class="background-image"></div>
+  <header>
+  <h1>Welcome to Ol' Reliable Auto Repair Shop</h1>
+  <p>We offer top-quality auto repair services.</p>
+</header>
+
+<section>
+  <h1 id="poze">Gallery</h1>
+  <img src="poze/s1.jpg" alt = "Poza 1">
+  <img src="poze/s2.jpg" alt = "Poza 2">
+  <img src="poze/s3.jpg" alt = "Poza 3">
+  <img src="poze/s4.jpg" alt = "bubuit">
+</section>
+<section id = "SectRecenzii">
+  <h1 id="recenzii">Testimonials</h1>
+  <div class="recenzie">
+    <h2>John Smith</h2>
+    <p>I had a great experience at this auto repair shop. The staff was friendly and knowledgeable, and they fixed my car's issue quickly and efficiently. I would highly recommend them.</p>
+  </div>
+  <div class="recenzie">
+    <h2>Jane Doe</h2>
+    <p>This auto repair shop is fantastic! They provided excellent customer service and went above and beyond to ensure my satisfaction. The quality of their work is top-notch, and I will definitely be returning for any future car repairs.</p>
+  </div>
+  <div class="recenzie">
+    <h2>Michael Johnson</h2>
+    <p>I cannot say enough good things about this auto repair shop. The team was incredibly professional and honest. They diagnosed the problem accurately and gave me a fair and reasonable quote. The repairs were done perfectly, and my car is running smoothly again. Highly recommended!</p>
+  </div>
+  <div class="recenzie">
+    <h2>Sarah Williams</h2>
+    <p>I had a positive experience with this auto repair shop. The staff was friendly and provided clear explanations of the repair process. They completed the job on time, and the pricing was fair. I would definitely trust them with my car again.</p>
+  </div>
+  <form id = "recenzie-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="review">Review:</label>
+  <textarea id="review" name="review" required></textarea>
+  
+  <input type="submit" value="Submit">
+</form>
+</section>
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+</section>
+</body>
+</html>
+
+<!--href = "angajati.html#id"-->

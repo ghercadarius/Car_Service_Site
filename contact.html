@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Repair Shop</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="contact.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li>
+        <a href="angajati.html">Employees</a>
+        <ul>
+          <li><a href="angajati.html#mecanici">Mechanics</a></li>
+          <li><a href="angajati.html#tehnicieni">Technicians</a></li>
+          <li><a href="angajati.html#auxiliar">Support Staff</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <ul>
+          <li><a href="contact.html#locatii">Locations</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="pwork.html">Previous Work</a>
+        <ul>
+          <li><a href="pwork.html#poze">Gallery</a></li>
+          <li><a href="pwork.html#recenzii">Testimonials</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section id = "continut">
+  <!-- Home Page -->
+  <div class="background-image"></div>
+  <header>
+  <h1>Welcome to Ol' Reliable Auto Repair Shop</h1>
+  <p>We offer top-quality auto repair services.</p>
+</header>
+
+<section>
+  <h1 id="locatii">Locations</h1>
+  <div id="service" class="service1">
+    <h2> Sunrise Motors </h2>
+    <p>123 Chestnut Street<br>3227930090</p>
+    <img src="poze/serv1.jpg" alt="Service 1">
+  </div>
+  <div id="service" class="service2">
+    <h2> Express Auto Repair </h2>
+    <p>456 Broadway<br>2643560437</p>
+    <img src="poze/serv2.jpg" alt="Service 2">
+  </div>
+  <div id="service" class="service3">
+    <h2> Best Choice Automotive </h2>
+    <p>1010 Las Vegas Boulevard<br>4477781523</p>
+    <img src="poze/serv3.jpg" alt="Service 3">
+  </div>
+  <form id="order-form">
+    <h2>Service Order Form</h2>
+    <div>
+      <input type="radio" id="service1" name="service" value="Service 1">
+      <label for="service1" id = "rs1">Sunrise Motors</label>
+    </div>
+    <div>
+      <input type="radio" id="service2" name="service" value="Service 2">
+      <label for="service2" id = "rs2">Express Auto Repair</label>
+    </div>
+    <input type="radio" id="service3" name="service" value="Service 3">
+      <label for="service3" id = "rs3">Best Choice Automotive</label>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="telephone">Telephone:</label>
+      <input type="tel" id="telephone" name="telephone" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <div>
+      <label for="description">Description of Order:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</section>
+
+
+<section>
+  <h1 id="faq">Frequently Asked Questions</h1>
+  <div id="intrebare">
+    <h2>How often should I get my car serviced?</h2>
+    <p>It is generally recommended to get your car serviced every 6,000 to 8,000 miles or every 6 months, whichever comes first.</p>
+  </div>
+  <div id="intrebare">
+    <h2>What should I do if my check engine light comes on?</h2>
+    <p>If your check engine light comes on, it's important to have your vehicle inspected by a qualified mechanic to diagnose the issue and avoid potential damage.</p>
+  </div>
+  <div id="intrebare">
+    <h2>How long does it take to replace a car battery?</h2>
+    <p>The time it takes to replace a car battery can vary depending on the make and model of your vehicle, but it typically takes around 30 minutes to an hour.</p>
+  </div>
+  <div id="intrebare">
+    <h2>What are some common signs that my brakes need to be replaced?</h2>
+    <p>Common signs that your brakes may need to be replaced include squeaking or grinding noises, reduced braking performance, and a vibrating brake pedal.</p>
+  </div>
+</section>
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+</section>
+</body>
+</html>
+
+<!--href = "angajati.html#id"-->

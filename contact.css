@@ -1,0 +1,286 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif; /* Set the font family for the entire page */
+  line-height: 1.5; /* Set the line height for better readability */
+  background-color: white; /* Set the background color of the body */
+  padding: 15px;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 960px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add spacing around the container content */
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #F7A930; /* Background color of the navigation bar */
+  color: #FBC97C; /* Text color of the navigation bar */
+}
+
+nav > ul {
+  display: grid; /* Use CSS Grid to layout the navigation items */
+  grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns for navigation items */
+  list-style: none; /* Remove the default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+nav > ul li {
+  position: relative; /* Enable positioning for sub-menus */
+}
+
+nav > ul li a {
+  color: black; /* Text color for the navigation links */
+  text-decoration: none; /* Remove underline on links */
+  padding: 5px; /* Spacing around the link text */
+  display: block; /* Make the link fill the entire list item */
+  text-align: center; /* Center-align the text within the navigation item */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+  transition: background-color 0.2s;
+}
+
+nav > ul li:hover > a {
+  background-color: #C5BFC0; /* Background color of the list item on hover */
+  transition: background-color 0.2s;
+}
+
+nav > ul li ul {
+  display: none; /* Hide the sub-menu by default */
+  position: absolute; /* Position the sub-menu absolutely */
+  top: 100%; /* Position the sub-menu below the parent list item */
+  left: 0; /* Align the sub-menu with the parent list item */
+  background-color: #FBC97C; /* Background color of the sub-menu */
+  min-width: 250px; /* Set a minimum width for the sub-menu */
+  padding: 10px 0; /* Spacing inside the sub-menu */
+  z-index: 1; /* Ensure the sub-menu appears above other content */
+  box-shadow: 0 2px 5px rgba(255, 165, 0, 0.6); /* Add a box shadow to the sub-menu */
+}
+
+nav > ul li:hover > ul {
+  display: block; /* Display the sub-menu on hover */
+}
+
+nav > ul li ul li {
+  width: 80%; /* Make the sub-menu items occupy 75% of the width */
+  padding: 20px;
+}
+
+
+nav > ul li ul li a:hover {
+  background-color: #FCB74E; /* Background color of the sub-menu item on hover */
+}
+
+.container {
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px; /* Spacing around the container content */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Inline styles for the background image effect */
+.background-image {
+  position: fixed; /* Position the background image fixed within the viewport */
+  top: 0; /* Align the top edge of the image with the top of the viewport */
+  left: 0; /* Align the left edge of the image with the left of the viewport */
+  width: 100%; /* Make the background image cover the entire width of the viewport */
+  height: 100vh; /* Make the background image cover the entire height of the viewport */
+  background-image: url('poze/background.jpg'); /* Set the background image URL */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center bottom; /* Position the background image in the center horizontally and at the bottom vertically */
+  opacity: 0.5; /* Set the opacity of the background image */
+  z-index: -1; /* Position the background image behind other elements */
+}
+
+/* Page-specific styles */
+header {
+  background-color: #FACA80; /* Background color of the header */
+  padding: 40px; /* Spacing inside the header */
+  text-align: center; /* Center-align the content within the header */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Background color of the footer */
+  color: #fff; /* Text color of the footer */
+  padding: 20px; /* Spacing inside the footer */
+  text-align: center; /* Center-align the content within the footer */
+}
+/*DE AICI SUNT PT PAGINA*/
+
+section #locatii{
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+section #service h2,
+section #service p{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+section #service{
+  transition: 0.3s;
+  margin: 10px;
+  display: grid;
+  grid-template-areas:
+  'a b'
+  'c b';
+}
+
+section #service:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+section #service h2{
+  grid-area: a;
+}
+
+section #service p{
+  grid-area: c;
+}
+
+section #service img{
+  grid-area: b;
+  max-width: 60vw;
+  max-height: 60vh;
+  object-fit: scale-down;
+}
+
+section #order-form{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+section #order-form #description{
+  width: 30vw;
+  height: 30vh;
+}
+
+section #faq{
+  margin: 10px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  font-size: 36px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#rs1:hover, #rs2:hover, #rs3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+section #order-form #service1:hover,
+section #order-form #service2:hover,
+section #order-form #service3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+#intrebare{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#intrebare:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+@media only screen and (max-height: 1000px) and (max-width: 1000px) {
+  /* Media query for screens with a maximum height of 1000px and maximum width of 1000px */
+
+  nav {
+    /* Styles for the navigation bar */
+    position: fixed; /* Fixes the navigation bar position on the screen */
+    top: 0; /* Positions the navigation bar at the top of the screen */
+    left: 0; /* Positions the navigation bar at the left side of the screen */
+    height: 100vh; /* Sets the height of the navigation bar to 100% of the viewport height */
+    width: 25vw; /* Sets the width of the navigation bar to 25% of the viewport width */
+    background-color: #777; /* Sets the background color of the navigation bar to dark gray */
+    color: #fff; /* Sets the text color of the navigation bar to white */
+    display: flex; /* Displays the navigation bar as a flex container */
+    flex-direction: column; /* Arranges the flex items in a column layout */
+    justify-content: flex-start; /* Aligns the flex items to the start of the flex container vertically */
+    align-items: flex-end; /* Aligns the flex items to the end of the flex container horizontally */
+    z-index: 1; /* Sets the stacking order of the navigation bar */
+    transition: width 0.3s ease; /* Adds a transition effect to the width property with a duration of 0.3 seconds and an easing function */
+  }
+
+/* transform: translateY(-5px)
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) */
+  nav:hover {
+    /* Styles on hover */
+    width: 80%; /* Expands the width of the navigation bar to 80% on hover */
+  }
+
+  nav ul {
+    /* Styles for the navigation bar list */
+    list-style: none; /* Removes the default bullet points from the list */
+    padding: 0; /* Removes the default padding from the list */
+    height: 100%; /* Sets the height of the list to 100% of its container */
+    display: flex; /* Displays the list as a flex container */
+    flex-direction: column; /* Arranges the flex items in a column layout */
+    justify-content: flex-start; /* Aligns the flex items to the start of the flex container vertically */
+    align-items: flex-start; /* Aligns the flex items to the start of the flex container horizontally */
+    margin-right: 10%;
+    width: 100%; /* Sets the width of the list to 100% of its container */
+    overflow-y: auto; /* Enables vertical scrolling if the content exceeds the height of the list */
+  }
+
+  nav ul li {
+    /* Styles for each navigation bar item */
+    position: relative; /* Positions the list item relative to its normal position */
+    width: 100%; /* Sets the width of the list item to 100% of its container */
+  }
+
+  nav ul li a {
+    /* Styles for the navigation bar links */
+    color: black; /* Sets the text color of the links to black */
+    text-decoration: none; /* Removes the underline from the links */
+    padding: 10px; /* Adds padding around the links */
+    display: block; /* Displays the links as block-level elements, taking up a full row */
+    text-align: center; /* Centers the text horizontally within the links */
+    transition: all 0.3s ease; /* Adds a transition effect to all CSS properties with a duration of 0.3 seconds and an easing function */
+    white-space: nowrap; /* Prevents line breaks within the links */
+    overflow: hidden; /* Hides any overflowing content within the links */
+    text-overflow: ellipsis; /* Specifies how to handle text that is too long to fit within the links */
+  }
+
+  nav ul li:hover > a {
+    /* Styles for the navigation bar links on hover */
+    background-color: #777; /* Changes the background color of the links to dark gray on hover */
+    color: #fff; /* Changes the text color of the links to white on hover */
+    padding-right: 30px; /* Adds additional padding to the right of the links on hover */
+    white-space: normal; /* Allows line breaks within the links on hover */
+    overflow: hidden; /* Makes the overflowing content within the links visible on hover */
+    text-overflow: clip; /* Clips the text if it overflows the links on hover */
+    width: 100%; /* Sets the width of the links to 100% on hover */
+  }
+
+  .container {
+    /* Styles for the container (assumed to be outside the navigation bar) */
+    margin-left: 25vw; /* Adds a left margin of 25% of the viewport width to create space for the navigation bar */
+    width: 75vw; /* Sets the width of the container to 75% of the viewport width */
+  }
+
+  #continut{
+    margin-left: 25vw;
+    width: 75vw;
+  }
+}
